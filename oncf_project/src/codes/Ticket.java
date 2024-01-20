@@ -24,6 +24,7 @@ public class Ticket {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel();
         Styles.bgColor(mainPanel);
+        
 
         JButton downloadButton = new JButton("Télécharger ticket");
         Styles.buttonStyle(downloadButton);
@@ -32,7 +33,7 @@ public class Ticket {
 
         // Add ActionListener to handle the button click event
         downloadButton.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
                 downloadTicket(); // Call your download ticket logic here
             }
