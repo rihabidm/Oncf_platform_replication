@@ -38,9 +38,9 @@ public class Tarifnormal {
         String[] date = dates.toArray(new String[0]);
 
         
-        final JComboBox departComboBox = new JComboBox(gare);
-        final JComboBox arriveeComboBox = new JComboBox(gare);
-        final JComboBox listdate = new JComboBox(date);
+        final JComboBox<String> departComboBox = new JComboBox<String>(gare);
+        final JComboBox<String> arriveeComboBox = new JComboBox<String>(gare);
+        final JComboBox<String> listdate = new JComboBox<String>(date);
         final Poucent poucentInstance = new Poucent();
         poucentInstance.setValue(0);
         

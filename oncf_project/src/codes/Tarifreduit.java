@@ -1,13 +1,12 @@
 package codes;
 import java.sql.*;
+
 import javax.swing.*;
 
 
 
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
@@ -70,10 +69,10 @@ public class Tarifreduit {
         String[] date = dates.toArray(new String[0]);
 
         
-        final JComboBox departComboBox = new JComboBox(gare);
-        final JComboBox arriveeComboBox = new JComboBox(gare);
-        final JComboBox listdate = new JComboBox(date);
-        final JComboBox maCarte = new JComboBox(carte);
+        final JComboBox<String> departComboBox = new JComboBox<String>(gare);
+        final JComboBox<String> arriveeComboBox = new JComboBox<String>(gare);
+        final JComboBox<String> listdate = new JComboBox<String>(date);
+        final JComboBox<String> maCarte = new JComboBox<String>(carte);
         JTextField dateTextField = new JTextField();
         dateTextField.setColumns(10);
         final JTextField monCode = new JTextField();

@@ -10,7 +10,7 @@ import javax.swing.*;
 public class GoTo {
 	
 	
-	public static void train(JButton button,final JComboBox departComboBox,final JComboBox arriveeComboBox,final JComboBox listdate,final Poucent poucentInstance) {
+	public static void train(JButton button,final JComboBox<String> departComboBox,final JComboBox<String> arriveeComboBox,final JComboBox<String> listdate,final Poucent poucentInstance) {
 		button.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		Object selectedDepartItem = departComboBox.getSelectedItem();
@@ -25,7 +25,7 @@ public class GoTo {
         });
     }
 	
-	public static void trainreduit(JButton button,final ArrayList<RedData> data,final JComboBox departComboBox,final JComboBox arriveeComboBox,final JComboBox listdate,final JTextField monCode,final JComboBox maCarte,final Poucent poucentInstance) {
+	public static void trainreduit(JButton button,final ArrayList<RedData> data,final JComboBox<String> departComboBox,final JComboBox<String> arriveeComboBox,final JComboBox<String> listdate,final JTextField monCode,final JComboBox<String> maCarte,final Poucent poucentInstance) {
 		 button.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
 	                String selectedCard = maCarte.getSelectedItem().toString();

@@ -1,13 +1,7 @@
 package codes;
 
 import java.awt.*;
-import java.sql.ResultSet;
-import java.sql.*;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 public class Styles {
 	public static void buttonStyle(JButton button) {
@@ -41,7 +35,7 @@ public class Styles {
         }
         
     }
-    public static void organiserNormal(JPanel panel,JPanel buttonPanel, JComboBox departComboBox,JComboBox arriveeComboBox,JComboBox listdate) {
+    public static void organiserNormal(JPanel panel,JPanel buttonPanel, JComboBox<String> departComboBox,JComboBox<String> arriveeComboBox,JComboBox<String> listdate) {
     	Font labelFont = new Font("Comic Sans MS", Font.BOLD, 14);
         Color labelColor = new Color(255, 255, 255); 
 
@@ -86,7 +80,7 @@ public class Styles {
         
     }
     
-    public static void organiserReduit(JPanel  panel,JPanel buttonPanel,JComboBox maCarte,JTextField monCode, JComboBox departComboBox,JComboBox arriveeComboBox,JComboBox listdate) {
+    public static void organiserReduit(JPanel  panel,JPanel buttonPanel,JComboBox<String> maCarte,JTextField monCode, JComboBox<String> departComboBox,JComboBox<String> arriveeComboBox,JComboBox<String> listdate) {
     	Font labelFont = new Font("Comic Sans MS", Font.BOLD, 14);
         Color labelColor = new Color(255, 255, 255); 
 

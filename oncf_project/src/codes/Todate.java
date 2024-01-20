@@ -1,8 +1,6 @@
 package codes;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class Todate {
     public static String convertTimestampToDate(String timestamp) {
