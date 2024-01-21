@@ -19,7 +19,6 @@ public class GoTo {
          		String selectedArriveText = selectedArriveItem.toString();
          		Object selectedDateItem = listdate.getSelectedItem();
          		String selectedDateText = selectedDateItem.toString();
-         		System.out.println(selectedDepartText);
          		Train.window(poucentInstance, selectedDepartText,selectedArriveText,selectedDateText);
         	}
         });
@@ -45,7 +44,6 @@ public class GoTo {
 	            		String selectedArriveText = selectedArriveItem.toString();
 	            		Object selectedDateItem = listdate.getSelectedItem();
 	            		String selectedDateText = selectedDateItem.toString();
-	            		System.out.println(selectedDepartText);
 	            		Train.window(poucentInstance, selectedDepartText,selectedArriveText,selectedDateText);
 	                } else {
 	                    // Les informations ne sont pas correctes, effacer les zones de texte
