@@ -30,6 +30,7 @@ public class Ticket {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel();
         Styles.bgColor(mainPanel);
+        
 
         JButton downloadButton = new JButton("Télécharger ticket");
         Styles.buttonStyle(downloadButton);
@@ -38,7 +39,7 @@ public class Ticket {
 
         // Add ActionListener to handle the button click event
         downloadButton.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
                 downloadTicket(); // Call your download ticket logic here
             }
@@ -92,4 +93,35 @@ public class Ticket {
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                window();
+            }
+        });
+    }
+}
+
+class Styles {
+    public static void bgColor(JPanel panel) {
+        panel.setBackground(new Color(255, 255, 204));
+    }
+
+    public static void buttonStyle(JButton button) {
+        button.setFont(new Font("Arial", Font.BOLD, 16));
+    }
+
+    public static void buttonSize(int width, int height, JButton button) {
+        button.setPreferredSize(new Dimension(width, height));
+    }
+
+    public static void centerButtons(JPanel panel, JButton button) {
+        panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        panel.add(button);
+    }
+}
+>>>>>>> 4c1293e50c06c15cad6d7def0d577300912e5f3e
