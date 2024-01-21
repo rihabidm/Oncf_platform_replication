@@ -93,35 +93,4 @@ public class Ticket {
             }
         }
     }
-<<<<<<< HEAD
 }
-=======
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                window();
-            }
-        });
-    }
-}
-
-class Styles {
-    public static void bgColor(JPanel panel) {
-        panel.setBackground(new Color(255, 255, 204));
-    }
-
-    public static void buttonStyle(JButton button) {
-        button.setFont(new Font("Arial", Font.BOLD, 16));
-    }
-
-    public static void buttonSize(int width, int height, JButton button) {
-        button.setPreferredSize(new Dimension(width, height));
-    }
-
-    public static void centerButtons(JPanel panel, JButton button) {
-        panel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        panel.add(button);
-    }
-}
->>>>>>> 4c1293e50c06c15cad6d7def0d577300912e5f3e
