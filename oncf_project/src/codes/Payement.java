@@ -14,7 +14,7 @@ public class Payement {
         f.setResizable(false);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new GridBagLayout());
-	Styles.bgColor(mainPanel);
+        Styles.bgColor(mainPanel);
 
         
         mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20,20, 20));
@@ -32,9 +32,7 @@ public class Payement {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        for (User user : data) {
-            System.out.println("Username: " + user.getUsername() + ", Password: " + user.getPassword());
-        }
+        
         
         final JTextField user = new JTextField();
         user.setColumns(10);
@@ -48,6 +46,7 @@ public class Payement {
         f.setContentPane(mainPanel);
         f.setVisible(true);
     }
+    
     
 
     
