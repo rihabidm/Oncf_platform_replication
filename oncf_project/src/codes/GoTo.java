@@ -137,6 +137,5 @@ public class GoTo {
         		Payement.window(gd,ga,d,p);
         	}
         });
-
-}
 	}
+}
