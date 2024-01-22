@@ -19,7 +19,6 @@ public class GoTo {
          		String selectedArriveText = selectedArriveItem.toString();
          		Object selectedDateItem = listdate.getSelectedItem();
          		String selectedDateText = selectedDateItem.toString();
-         		System.out.println(selectedDepartText);
          		Train.window(poucentInstance, selectedDepartText,selectedArriveText,selectedDateText);
         	}
         });
@@ -45,7 +44,6 @@ public class GoTo {
 	            		String selectedArriveText = selectedArriveItem.toString();
 	            		Object selectedDateItem = listdate.getSelectedItem();
 	            		String selectedDateText = selectedDateItem.toString();
-	            		System.out.println(selectedDepartText);
 	            		Train.window(poucentInstance, selectedDepartText,selectedArriveText,selectedDateText);
 	                } else {
 	                    // Les informations ne sont pas correctes, effacer les zones de texte
@@ -106,14 +104,14 @@ public class GoTo {
     }
 	
 	
-	public static void ticket(JButton button,final JTextField user,final JTextField psw,final ArrayList<User> data) {
+	public static void ticket(JButton button,final JTextField user,final JTextField psw,final ArrayList<User> data,final String gd,final String ga,final String d ,final int p) {
 		button.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		String selectedUser = user.getText().trim();
         		String enteredPwd = psw.getText().trim();
         		boolean credentialsCorrect = checkCredentials(selectedUser, enteredPwd);
         		if (credentialsCorrect) {
-        			Ticket.window();
+        			Ticket.window(gd,ga,d,p);
         		}else {
         			psw.setText("");
         			user.setText("");
@@ -133,10 +131,10 @@ public class GoTo {
     }
 	
 	
-	public static void payement(JButton button) {
+	public static void payement(JButton button,final String gd,final String ga,final String d ,final int p) {
 		button.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		Payement.window();
+        		Payement.window(gd,ga,d,p);
         	}
         });
 

@@ -7,14 +7,14 @@ import java.util.ArrayList;
 
 public class Payement {
 	
-    public static void window() {
+    public static void window(String gareDepart, String gareArrivee, String date, int prix) {
         JFrame f = new JFrame();
         f.setTitle("ONCF");
         f.setExtendedState(JFrame.MAXIMIZED_BOTH);
         f.setResizable(false);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel(new GridBagLayout());
-	Styles.bgColor(mainPanel);
+        Styles.bgColor(mainPanel);
 
         
         mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20,20, 20));
@@ -32,22 +32,21 @@ public class Payement {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        for (User user : data) {
-            System.out.println("Username: " + user.getUsername() + ", Password: " + user.getPassword());
-        }
+        
         
         final JTextField user = new JTextField();
         user.setColumns(10);
         final JTextField psw = new JTextField();
         psw.setColumns(10);
         JButton submitButton = new JButton("Soumettre");
-        GoTo.ticket(submitButton,user,psw,data);
+        GoTo.ticket(submitButton,user,psw,data,gareDepart,gareArrivee,date,prix);
         Styles.organiserPay(mainPanel,submitButton,user,psw);
         
         
         f.setContentPane(mainPanel);
         f.setVisible(true);
     }
+    
     
 
     

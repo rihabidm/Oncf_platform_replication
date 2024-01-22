@@ -197,7 +197,7 @@ public class Styles {
         mainPanel.add(pLabel, gbc);
         gbc.gridx++;
         JButton choixButton = new JButton("Choisir");
-        GoTo.payement(choixButton);
+        GoTo.payement(choixButton,gd,ga,d,p);
         Styles.buttonStyle(choixButton);
         mainPanel.add(choixButton, gbc);
         gbc.gridx--;
