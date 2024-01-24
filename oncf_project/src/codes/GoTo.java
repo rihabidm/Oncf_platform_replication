@@ -1,4 +1,5 @@
 package codes;
+import admin.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -84,6 +85,13 @@ public class GoTo {
         	}
         });
     }
+	public static void loginAdmin(JButton button) {
+		button.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+         		Login.window();
+        	}
+        });
+    }
 	
 	
 	public static void tarifnormal(JButton button) {
@@ -138,4 +146,32 @@ public class GoTo {
         	}
         });
 	}
+	public static void choix(JButton button) {
+		button.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		Choix.window();
+        	}
+        });
+    }
+	public static void reduction(JButton button) {
+		button.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		Reduction.window();
+        	}
+        });
+    }
+	public static void trains(JButton button) {
+		button.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		Trains.window();
+        	}
+        });
+    }
+	public static void utilisateur(JButton button) {
+		button.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		Utilisateur.window();
+        	}
+        });
+    }
 }
