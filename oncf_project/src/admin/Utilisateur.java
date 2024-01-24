@@ -68,9 +68,7 @@ public class Utilisateur {
         f.add(mainPanel);
         f.setVisible(true);
     }
-    public static void main(String[] args) {
-    	Utilisateur.window();
-    }
+    
 
 
 
