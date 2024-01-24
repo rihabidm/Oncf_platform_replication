@@ -17,6 +17,7 @@ public class Page1 {
         
         
         GoTo.page(b2);
+	GoTo.choix(b1);
         
         Styles.bgColor(mainPanel);
         Styles.buttonStyle(b1);
