@@ -24,9 +24,11 @@ public class Choix {
         Styles.bgColor(mainPanel);
         Styles.buttonStyle(b1);
         Styles.buttonStyle(b2);
+        Styles.buttonStyle(b3);
+        Styles.buttonSize(500, 100, b3);
         Styles.buttonSize(500, 100, b1);
         Styles.buttonSize(500, 100,b2);
-        Styles.centerButtons(mainPanel, b1,b2);
+        Styles.centerButtons(mainPanel, b1,b2,b3);
         
         
         f.setContentPane(mainPanel);
