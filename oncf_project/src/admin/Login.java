@@ -9,12 +9,8 @@ import java.util.ArrayList;
 
 public class Login {
 	
-    public static void window() {
-        JFrame f = new JFrame();
-        f.setTitle("ONCF");
-        f.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        f.setResizable(false);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    public static JPanel window() {
+
         JPanel mainPanel = new JPanel(new GridBagLayout());
         Styles.bgColor(mainPanel);
 
@@ -44,8 +40,7 @@ public class Login {
         Styles.organiserPay(mainPanel,submitButton,user,psw);
         GoTo.choix(submitButton);
         
-        f.setContentPane(mainPanel);
-        f.setVisible(true);
+        return mainPanel;
     }
     
     
