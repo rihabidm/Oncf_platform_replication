@@ -6,14 +6,8 @@ import java.awt.*;
 import java.sql.*;
 
 public class Utilisateur {
-    public static void window() {
-        JFrame f = new JFrame();
-        f.setTitle("ONCF");
-        f.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        f.setResizable(false);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel mainPanel = new JPanel(new GridBagLayout());
-
+    public static JPanel window() {
+    
         try {
             Statement st = Connexion.connectONCF();
             ResultSet res = st.executeQuery("select * from utilisateur");
@@ -65,12 +59,8 @@ public class Utilisateur {
         }
 
         Styles.bgColor(mainPanel);
-        f.add(mainPanel);
-        f.setVisible(true);
+        return mainPanel;
     }
     
-
-
-
     
 }
